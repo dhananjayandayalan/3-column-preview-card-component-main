@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive;
+
+font-family: 'Lexend Deca', sans-serif; */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  color: white;
+}
+
+main {
+  padding: 4rem 1rem;
+  display: grid;
+  place-items: center;
+}
+
+section {
+  min-width: 343px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  padding: 3rem;
+}
+
+.card h1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card p {
+  font-size: 15px;
+  letter-spacing: 0.4px;
+  line-height: 1.5;
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-bottom: 2rem;
+}
+
+.sedan {
+  background: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.suv {
+  background: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card button {
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.card button:hover {
+  background: none;
+  color: white;
+  outline: white solid 2px;
+}
+
+.sedan button {
+  color: hsl(31, 77%, 52%);
+}
+
+.suv button {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 800px) {
+  main {
+    padding: unset;
+    height: 100vh;
+  }
+  section {
+    max-width: 945px;
+    flex-direction: row;
+  }
+
+  .sedan {
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 10px;
+  }
+
+  .luxury {
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 10px;
+  }
+
+  .card p {
+    padding-bottom: 5rem;
+  }
+}
+
+footer {
+  color: black;
+  text-align: center;
+}
+
+footer a:visited {
+  color: gray;
+}
+
+footer a {
+  text-decoration: none;
+  color: gray;
+}
+
+footer a:hover {
+  color: rgb(71, 71, 71);
+}
